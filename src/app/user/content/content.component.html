@@ -1,0 +1,26 @@
+<div class="sideMenu">
+  <div class="title">
+    <h3> CREATIVE TIM </h3>
+  </div>
+
+  <div class="components" *ngFor="let comp of data" [routerLink]="comp.path" routerLinkActive="active" (click)="setName(comp.name)">
+      <i class='material-icons'>{{comp.icon}}</i>
+      <p >{{comp.name}}</p>
+  </div>
+
+</div>
+
+<div class="header">
+  <h2>{{HeaderName}}</h2>
+  <div class="headerContent">
+    <input type="text" placeholder="Search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <img [src]="dashIcon">
+    <img [src]="notificIcon">
+    <img [src]="userIcon">
+  </div>
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

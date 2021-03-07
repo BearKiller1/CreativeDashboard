@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family:Robto;
+    src: url(assets/Fonts/Roboto-Black.ttf);
+}
+body{
+    margin:0;
+    padding:0;
+    background:#EDEDED;
+    font-family: Roboto;
+}
+p,h1,h2,h3,h4,h5,input,button,div{
+    display:inline;
+    outline:0;
+    border:0;
+}

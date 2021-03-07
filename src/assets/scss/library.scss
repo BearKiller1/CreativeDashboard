@@ -1,0 +1,79 @@
+@mixin sideMenu(){
+    width: 19%;
+    height: 100vh;
+    float:left;
+}
+@mixin flex(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin input(){
+    width: 80%;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid $yellow;
+    transition: 0.5s;
+    &:hover{
+        box-shadow: 1px 0px 39px 1px rgba(0,0,0,0.66);
+        transition: 0.5s;
+    }
+}
+@mixin button(){
+    width: 60%;
+    height: 7vh;
+    background-color: $yellow;
+    border-radius: 22px;
+    font-size: 2.7vw;
+    transition: 0.5s;
+}
+@mixin form(){
+    border: 2px solid $yellow;
+    flex-direction: column;
+    width:30%;
+    height: 60vh;
+    margin:9vh 35%;
+    border-radius: 22px;
+    background-color: #f8f8f8;
+    transition: 0.5s;
+    box-shadow: 1px 1px 25px 3px $yellow;
+}
+@mixin search(){
+    width:35%;
+    height:6vh;
+    color:$gray;
+    border-bottom:1px solid $gray;
+    background:inherit;
+    transition:1s;
+    &:hover{
+        border-bottom:1.9px solid $pink;
+    }
+}
+@mixin icon(){
+    width:8%;
+    height:3vh;
+    cursor:pointer;
+}
+@mixin box(){
+    width:30%;
+    height: 22vh;
+    margin-left:2.5%;
+    border-radius:5px;
+    background:white;
+}
+@mixin image(){
+  width:40%;
+  height:13vh;
+  margin:-4vh 0 0 3%;
+  border-radius:2px;
+  float:left;
+}
+ $yellow:#c2c213cd;
+ $pink:#9C27B0;
+ $gray:#D2D2D2;
+ $grayText:#999999;
+
+ $orange:#FE9F1A;
+ $red:#EA4642;
+ $green:#4EA952;
+ $blue:#11B8CD;

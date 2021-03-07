@@ -1,0 +1,27 @@
+@import "~src/assets/scss/library.scss";
+
+form{
+    @include flex();
+    @include form();
+    margin-top:20vh;
+    input{
+        @include input();
+    }
+    button{
+        @include button();
+        &:hover{
+            box-shadow: 1px 0px 39px 1px rgba(0,0,0,0.66); 
+            transition: 0.5s;
+        }
+    }
+    p{
+        cursor: pointer;
+        &:hover{
+            color:$yellow;
+            transition: 0.5s;
+        }
+    }
+}
+.button{
+    @include button();
+}
